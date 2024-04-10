@@ -22,6 +22,7 @@ Modal.setAppElement('#root');
 
 function App() {
   const [modalIsOpen, setIsOpen] = useState(false);
+ 
 
   function handleOpenModal() {
     setIsOpen(true);
@@ -30,43 +31,42 @@ function App() {
   function handleCloseModal() {
     setIsOpen(false);
   }
-
   const customStyles = {
-    content: {
-      width: '400px',
+     content: {
+      width: '500px',
       height: '500px',
-      top: '100px',
-      left: '35%',
-      right: '35%',
-      bottom: '0',
+      left: '32%',
+      
 
-     
+     }
+  }
 
-    }
-  };
-
+  
   return (
 
     
     <div className='EstiloModal' id='EstiloModal' >
-     
-        <Modal 
-        isOpen={modalIsOpen}
-        onRequestClose={handleCloseModal}
-        style={customStyles}
-        >
-        
-            <div className="entrega">
-              <EntregaAnimationjsx/>
-              <div className='texto' >  
-              <h2>Obrigado pela sua preferência.</h2>
-              </div>          
-              <button
-              className='close-modal'
-              onClick={handleCloseModal} >fechar
-              </button>
+      <div className='modal-estilo' >
+          <Modal 
+              isOpen={modalIsOpen}
+              onRequestClose={handleCloseModal}
+              style={customStyles}
+              >
+              
+                  <div className="entrega">
+                    <EntregaAnimationjsx/>
+                    <div className='texto' >  
+                    <h2>Obrigado pela sua preferência.</h2>
+                    </div>  
+                    <br />        
+                    <button
+                    className='close-modal'
+                    onClick={handleCloseModal} >fechar
+                    </button>
+                </div>
+          </Modal>
         </div>
-        </Modal>
+        
       <header className="content">
         <div className="logo">
           <img src={logo} alt="" />

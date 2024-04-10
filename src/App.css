@@ -325,7 +325,39 @@ footer {
     justify-content: center;
 }
 /*modal*/
+.texto {
+    align-items: center;
+    justify-content: center;
+    
 
+}
+.texto h2 {
+    align-items: center;
+    justify-content: end;
+    font-family: cursive;
+    
+
+}
+.close-modal{
+    font-size: larger;
+    border: solid 2px black;
+    color: black;
+    background-color: rgb(125, 121, 121);
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.entrega {
+    
+     width: 400px;
+     height: 400px;
+    
+    
+}
+.modal-estilo{
+    background-color: black;
+}
 
 
 
